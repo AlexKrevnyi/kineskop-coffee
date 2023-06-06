@@ -9,7 +9,6 @@ body {
 	font-family: 'neue-haas', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
-	background-color: #F5F5F5;
 }
 
 /*Primary header*/
@@ -41,7 +40,7 @@ div.header-logo {
 	padding: 10px 0px 10px 40px;
 }
 
-nav ul {
+.primary-navigation {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -89,5 +88,12 @@ li.order a:where(:hover, :focus) {
 
 @media (max-width: 64rem) {
 
-	
+	.primary-navigation {
+		position: fixed;
+		inset: 0 0 0 30%;
+		background-color: #F5F5F5;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding: min(30vh, 10rem);
+	}
 }
