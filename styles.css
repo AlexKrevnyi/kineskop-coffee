@@ -53,12 +53,15 @@ nav li {
 	padding: 10px 10px;
 }
 
- li a {
+li a {
 	text-decoration: none;
 	color: black;
 	padding: 10px 12px;
 	border-radius: 50px;
+<<<<<<< HEAD
 	transition: 250ms;
+=======
+>>>>>>> 9507d8f5f43003ade53ac75cc9ac5aa093b5e60f
 }
 
 li.order a {
