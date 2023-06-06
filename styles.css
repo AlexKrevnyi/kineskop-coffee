@@ -53,7 +53,7 @@ nav li {
 	padding: 10px 10px;
 }
 
- li a {
+li a {
 	text-decoration: none;
 	color: black;
 }
@@ -61,8 +61,6 @@ nav li {
 li.order {
 	background-color: black;
 	border-radius: 50px;
-
-	
 }
 
 li.order a {

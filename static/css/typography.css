@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'neue-haas';
+    src: url('../../fonts/neuehaasunicaw1g-light-webfont.woff2') format('woff2'),
+         url('../../fonts/neuehaasunicaw1g-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neue-haas';
+    src: url('../../fonts/neuehaasunicaw1g-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/neuehaasunicaw1g-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neue-haas';
+    src: url('../../fonts/neuehaasunicaw1g-medium-webfont.woff2') format('woff2'),
+         url('../../fonts/neuehaasunicaw1g-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neue-haas';
+    src: url('../../fonts/neuehaasunicaw1g-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/neuehaasunicaw1g-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'damn';
+    src: url('../../fonts/damn-webfont.woff2') format('woff2'),
+         url('../../fonts/damn-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
