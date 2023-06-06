@@ -12,6 +12,8 @@ body {
 	background-color: #F5F5F5;
 }
 
+/*Primary header*/
+
 header {
 	background-color: #FF93AD;
 }
@@ -36,16 +38,15 @@ div.header-container {
 }
 
 div.header-logo {
-	padding: 10px 40px;
+	padding: 10px 0px 10px 40px;
 }
 
 nav ul {
 	display: flex;
 	justify-content: space-between;
-	width: 570px;
 	align-items: center;
 	flex-wrap: nowrap;
-	padding: 10px 40px;
+	padding: 10px 40px 10px 0px;
 }
 
 nav li {
@@ -56,18 +57,37 @@ nav li {
  li a {
 	text-decoration: none;
 	color: black;
-}
-
-li.order {
-	background-color: black;
+	padding: 10px 12px;
 	border-radius: 50px;
-
-	
+	transition: 250ms;
 }
 
 li.order a {
+	background-color: black;
+	border-radius: 50px;
 	color: white;
 	padding: 10px 20px;
 	text-align: center;
+	transition: 250ms;
 }
 
+a:where(:hover, :focus) {
+	background-color:  #FF93AD;
+	text-shadow:0px 0px 1px black;
+	transition: 250ms;
+}
+
+li.order a:where(:hover, :focus) {
+	background-color:  #FF93AD;
+	color: black;
+	text-shadow:0px 0px 1px black;
+	transition: 250ms;
+}
+
+
+/*TABLET VERSION*/
+
+@media (max-width: 64rem) {
+
+	
+}
