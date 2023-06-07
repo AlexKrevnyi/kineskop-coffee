@@ -1,5 +1,6 @@
 @import './static/css/variables.css';
 @import './static/css/typography.css';
+@import './static/css/reset.css';
 
 
 * {
@@ -26,7 +27,6 @@ div.header-wrapper {
     max-width: 1440px;
     margin: 0 auto;
     padding: 24px 0;
-
 }
 
 div.header-container {
@@ -91,6 +91,92 @@ li.order a:where(:hover, :focus) {
 .mobile-nav-toggle {
     display: none;
 }
+
+/*Primary pink page*/
+
+.pink-page {
+    background-color: var(--pink);
+    height: ;
+    margin-top: -1px;
+}
+
+.pink-page-width {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.pink-page-margin {
+    margin: 0 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pink-page-text {
+   margin-top: 75px;
+   position: relative;
+   z-index: 100;
+}
+
+.pink-page-text p {
+    font-size: 150px;
+    font-family: 'damn';
+    text-transform: uppercase;
+    line-height: 157px;
+}
+
+button.open {
+    width: 310px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.pink-page-decor {
+   position: relative;
+   max-width: 30%;
+}
+
+/*DECOR*/
+
+img.decor2 {
+    position: absolute;
+    left: 610px;
+    top: -66px;
+    z-index: 20;
+}
+
+img.decor3 {
+    position: absolute;
+    right: 5.93rem;
+    top: 5.25rem;
+}
+
+img.decor11 {
+    position: absolute;
+    right: 20%;
+    top: 19.5rem;
+    z-index: 10;
+}
+
+img.decor5 {
+    position: absolute;
+    top: 19.12rem;
+    right: 2rem;
+    z-index: 10;
+}
+
+img.decor4 {
+    position: absolute;
+    right: 17.125rem;
+    top: 25rem;
+}
+
+img.decor6 {
+    position: absolute;
+    right: 17.125rem;
+    top: 32rem;
+    right: 20%;
+}
+
 
 
 /*TABLET VERSION*/
