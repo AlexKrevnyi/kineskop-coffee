@@ -32,7 +32,7 @@ div.header-wrapper {
 div.header-container {
     background-color: var(--white);
     max-width: 1320px;
-    min-height: 93px;
+    height: 93px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,7 +100,83 @@ li.order a:where(:hover, :focus) {
 @width-tablet: 768px;
 @width-mobile: 480px;*/
 
-@media (max-width: 64rem) {
+@media (min-width: 35rem) and (max-width: 64rem) {
+
+/*Tablet toggler menu*/
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        background: url("../images/hamburger-menu-2.svg");
+        border: 0;
+        background-repeat: no-repeat;
+        width: 3rem;
+        aspect-ratio: 1;
+        background-size: cover;
+        top: 2.5rem;
+        right: 4rem;
+        z-index: 9999;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background: url("../images/hamburger-menu-close.svg");
+        width: 3rem;
+        background-size: cover;
+    }
+
+    .primary-navigation {
+        position: fixed;
+        inset: 0 0 0 30%;
+        max-height: 550px;
+        border-bottom-left-radius: 50px;
+        background-color: #F5F5F5;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 5rem 2rem 3rem 2rem;
+        font-size: 1.5rem;
+        gap: 1rem;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+      
+    }
+
+    .primary-navigation[data-visible="true"] {
+         transform: translateX(0%);
+    }
+
+    .primary-navigation li {
+        padding: 24px 0;
+    }
+
+    li.order {
+        padding-top: 30px;
+    }
+
+/*END of mobile toggler menu*/
+
+/*Tablet header*/
+
+    div.header-container {
+        background-color: var(--white);
+        max-width: 100%;
+        max-height: 80px;
+        border-radius: 50px;
+        margin: 0 40px;
+    }
+
+    img.header-logo {
+        width: 228px;
+        height: 60px;
+    }
+
+
+}
+
+@media (max-width: 35rem) {
+
+/*Mobile toggler menu*/
 
     .mobile-nav-toggle {
         display: block;
@@ -111,8 +187,8 @@ li.order a:where(:hover, :focus) {
         width: 2rem;
         aspect-ratio: 1;
         background-size: cover;
-        top: 2rem;
-        right: 2rem;
+        top: 2.75rem;
+        right: 2.5rem;
         z-index: 9999;
     }
 
@@ -152,7 +228,27 @@ li.order a:where(:hover, :focus) {
         padding-top: 30px;
     }
 
+/*Mobile header*/
 
+    div.header-container {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        border-radius: 50px;
+        margin: 0 20px;
+    }
+
+     img.header-logo {
+        width: 114px;
+        height: 30px;
+    }
+
+    div.header-wrapper {
+        padding: 30px 0;
+
+}
 
 
 }
