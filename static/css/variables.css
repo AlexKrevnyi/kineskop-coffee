@@ -1,26 +1,11 @@
 :root {
-    /* Semantic Colors */
-    --color-primary: #4F75F3;
-    --color-primary--dark: #3f5dc2;
-    --color-secondary: #45c8b8;
-    --color-tertiary: #c263d3;
-
-    /* Shades of Gray */
-    --black: #181c32;
-    --charcoal: #2f323d;
-    --iron: #444a5c;
-    --graphite: #5c6480;
-    --slate: #777c8f;
-
-    --pewter: #c3c3c0;
-    --silver: #d9d9d6;
-    --flint: #f2f2ee;
-
-    --smoke: #f2f3f5;
-    --steam: #f7f9ff;
-    --vapor: #fafbfc;
-    --ozone: #fffdfa;
-
-    --footer-logo-width: 180px;
-    --login-logo-width: 180px;
+    /* Main Colors */
+    --pink: #FF93AD;
+    --black: #000000;
+    --white: #FFFFFF;
+    --green: #c263d3; 
+    --yellow:#FEED01;
+    --blue:#41FAF9;
+    --violet:#F900F8;
+    --smoke:#F5F5F5;    
 }

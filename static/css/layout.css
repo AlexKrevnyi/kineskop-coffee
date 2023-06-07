@@ -1,128 +1,145 @@
-@import './variables.css';
-@import './typography.css';
+@import './static/css/variables.css';
+@import './static/css/typography.css';
+
 
 * {
     box-sizing: border-box;
-}
-
-html {
-    min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin:0;
-    display:flex;
-    flex-direction:column;
-    height:100vh;
-    font-size: 15px;
-    line-height: 1.6;
-    color: var(--black);
-    font-family: 'neue-haas';
-}
-
-img {
-    max-width: 100%;
-}
-
-.wrapper {
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-a {
-    text-decoration: none;
-    color: var(--color-primary);
-}
-
-h1 {
-    margin: 20px 0;
-    font-size: 26px;
-    line-height: 1.2;
-}
-
-h2 {
-    margin: 10px 0;
-    font-size: 20px;
-    line-height: 1.2;
-    color: var(--iron);
-}
-
-h3 {
-    font-size: 20px;
-    color: var(--iron);
-}
-
-h4 {
-    font-size: 16px;
-    color: var(--iron);
-}
-
-h5 {
+    display: block;
+    font-family: 'neue-haas', sans-serif;
+    font-weight: 400;
     font-size: 16px;
 }
 
-h6 {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+/*Primary header*/
+
+header {
+    background-color: var(--pink);
 }
 
-.wrapper {
-    max-width: 1200px;
+div.header-wrapper {
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 24px 0;
+
 }
 
-/* Header */
-.header-wrapper {
-    height: 50px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-}
-
-.header {
-    position: relative;
-    background-color: white;
-    z-index: 2;
-}
-
-.header > .wrapper {
-    max-width: none;
+div.header-container {
+    background-color: var(--white);
+    max-width: 1320px;
+    min-height: 93px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-radius: 50px;
+    margin: 0 60px;
+}
+
+div.header-logo {
+    padding: 10px 0px 10px 40px;
+}
+
+.primary-navigation {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px 40px 10px 0px;
 }
 
-.header > .wrapper > .logo {
-    flex: 0 0 auto;
-    display: block;
+nav li {
+    list-style-type: none;
+    padding: 10px 10px;
 }
 
-.header > .wrapper > .logo > img {
-    display: block;
-    height: 29px;
-    margin: 10px 0;
+li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 12px;
+    border-radius: 50px;
+    transition: 250ms;
 }
 
-.primary-nav a {
-    padding: 8px;
-    color: var(--charcoal);
+li.order a {
+    background-color: var(--black);
+    border-radius: 50px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    transition: 250ms;
 }
 
-.primary-nav a:hover {
-    color: var(--black);
-    background-color: var(--flint);
+a:where(:hover, :focus) {
+    background-color:  var(--pink);
+    text-shadow:0px 0px 1px black;
+    transition: 250ms;
 }
 
-/* Utilities */
-strong {
-    font-weight: bold;
+li.order a:where(:hover, :focus) {
+    background-color: var(--pink);
+    color: black;
+    text-shadow:0px 0px 1px black;
+    transition: 250ms;
+}
+
+.mobile-nav-toggle {
+    display: none;
 }
 
 
-/* Footer */
-.footer {
-    margin-top:auto;
-    background-color: white;
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
+/*TABLET VERSION*/
+
+/* Max Width 
+@width-desktop: 960px;
+@width-tablet: 768px;
+@width-mobile: 480px;*/
+
+@media (max-width: 64rem) {
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        background: url("../images/hamburger-menu.svg");
+        border: 0;
+        background-repeat: no-repeat;
+        width: 3rem;
+        height: 1.5rem;
+        background-size: contain;
+        top: 2rem;
+        right: 2rem;
+        z-index: 9999;
+    }
+
+    .primary-navigation {
+        position: fixed;
+        inset: 0 0 0 30%;
+        max-height: 550px;
+        border-bottom-left-radius: 50px;
+        background-color: #F5F5F5;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 5rem 2rem 3rem 2rem;
+        font-size: 1.5rem;
+        gap: 1rem;
+        z-index: 1000;
+      
+    }
+
+    .primary-navigation li {
+        padding: 24px 0;
+    }
+
+    li.order {
+        padding-top: 30px;
+    }
+
+
+
+
 }
