@@ -105,12 +105,12 @@ li.order a:where(:hover, :focus) {
     .mobile-nav-toggle {
         display: block;
         position: absolute;
-        background: url("../images/hamburger-menu.svg");
+        background: url("../images/hamburger-menu-2.svg");
         border: 0;
         background-repeat: no-repeat;
-        width: 3rem;
-        height: 1.5rem;
-        background-size: contain;
+        width: 2rem;
+        aspect-ratio: 1;
+        background-size: cover;
         top: 2rem;
         right: 2rem;
         z-index: 9999;
@@ -118,6 +118,8 @@ li.order a:where(:hover, :focus) {
 
     .mobile-nav-toggle[aria-expanded="true"] {
         background: url("../images/hamburger-menu-close.svg");
+        width: 2rem;
+        background-size: cover;
     }
 
     .primary-navigation {
