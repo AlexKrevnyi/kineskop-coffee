@@ -13,6 +13,7 @@ body {
     font-family: 'neue-haas', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 /*Primary header*/
@@ -115,6 +116,10 @@ li.order a:where(:hover, :focus) {
         z-index: 9999;
     }
 
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background: url("../images/hamburger-menu-close.svg");
+    }
+
     .primary-navigation {
         position: fixed;
         inset: 0 0 0 30%;
@@ -128,7 +133,13 @@ li.order a:where(:hover, :focus) {
         font-size: 1.5rem;
         gap: 1rem;
         z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
       
+    }
+
+    .primary-navigation[data-visible="true"] {
+         transform: translateX(0%);
     }
 
     .primary-navigation li {
