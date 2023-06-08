@@ -96,7 +96,7 @@ li.order a:where(:hover, :focus) {
 
 .pink-page {
     background-color: var(--pink);
-    height: ;
+    height: 1072px;
     margin-top: -1px;
 }
 
@@ -107,12 +107,10 @@ li.order a:where(:hover, :focus) {
 
 .pink-page-margin {
     margin: 0 60px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .pink-page-text {
-   margin-top: 75px;
+   padding-top: 76px;
    position: relative;
    z-index: 100;
 }
@@ -122,6 +120,8 @@ li.order a:where(:hover, :focus) {
     font-family: 'damn';
     text-transform: uppercase;
     line-height: 157px;
+    position: relative;
+    z-index: 100;
 }
 
 button.open {
@@ -132,7 +132,6 @@ button.open {
 
 .pink-page-decor {
    position: relative;
-   max-width: 30%;
 }
 
 /*DECOR*/
@@ -140,41 +139,40 @@ button.open {
 img.decor2 {
     position: absolute;
     left: 610px;
-    top: -66px;
+    top: 2rem;
     z-index: 20;
 }
 
 img.decor3 {
     position: absolute;
     right: 5.93rem;
-    top: 5.25rem;
+    top: 6.75rem;
 }
 
 img.decor11 {
     position: absolute;
-    right: 20%;
+    right: 3.3rem;
     top: 19.5rem;
     z-index: 10;
 }
 
 img.decor5 {
     position: absolute;
-    top: 19.12rem;
-    right: 2rem;
+    top: 19.125rem;
+    right: 5.93rem;
     z-index: 10;
 }
 
 img.decor4 {
     position: absolute;
-    right: 17.125rem;
-    top: 25rem;
+    right: 13.375rem;
+    top: 26.12rem;
 }
 
 img.decor6 {
     position: absolute;
-    right: 17.125rem;
     top: 32rem;
-    right: 20%;
+    right: 3.3rem;
 }
 
 
@@ -257,6 +255,78 @@ img.decor6 {
         height: 60px;
     }
 
+/*Tablet Pink page*/
+    
+
+    .pink-page-margin {
+        margin: 0 40px;
+    }
+
+    .pink-page-text {
+        padding-top: 46px;
+        height: 100%;
+    }
+
+    .pink-page-text p {
+        font-size: 140px;
+        font-family: 'damn';
+        text-transform: uppercase;
+        line-height: 147px;
+        position: relative;
+        z-index: 100;
+    }
+
+    p:nth-child(1) {
+        border: 1px solid yellow;
+        width: 50%;
+    }
+
+    p:nth-child(2) {
+        width: 100%;
+        border: 1px solid green;
+    }
+
+    p:nth-child(3) {
+        width: 60%;
+        border: 1px solid red;
+    }
+
+/*Tablet Decor*/    
+
+    img.decor2 {
+        top: 1.125rem;
+        left: 11.375rem;
+    }
+
+    img.decor3 {
+        right: 0;
+        top: 1rem;
+    }
+
+    img.decor11 {
+        right: 0;
+        bottom: 0;
+        top: auto;
+    }
+
+    img.decor5 {
+        top: auto;
+        right: 2rem;
+        bottom: 1.2rem;
+    }
+
+    img.decor4 {
+        right: 0;
+        top: 10rem;
+    }
+
+    img.decor6 {
+        top: auto;
+        bottom: 20rem;
+        right: 0;
+        transform: rotate(-30deg);
+    }
+
 
 }
 
@@ -334,7 +404,88 @@ img.decor6 {
     div.header-wrapper {
         padding: 30px 0;
 
-}
+    }
+/*Mobile Pink page*/
+    
+    .pink-page-margin {
+        margin: 0 20px;
+    }
+
+    .pink-page-text {
+        padding-top: 18px;
+        height: 100%;
+    }
+
+    .pink-page-text p {
+        font-size: 90px;
+        font-family: 'damn';
+        text-transform: uppercase;
+        line-height: 94.5px;
+        position: relative;
+        z-index: 100;
+    }
+
+    p:nth-child(1) {
+        border: 1px solid yellow;
+        width: 70%;
+    }
+
+    p:nth-child(2) {
+        width: 100%;
+        border: 1px solid green;
+    }
+
+    p:nth-child(3) {
+        width: 80%;
+        border: 1px solid red;
+    }
+
+    button.open {
+        width: 100%;
+        height: 70px;
+        border-radius: 10px;
+    }
+
+/*Mobile Decor*/    
+
+    img.decor2 {
+        top: 0.5rem;
+        left: 7.2rem;
+        width: 118px;
+        height: 116px;
+    }
+
+    img.decor3 {
+        right: 0.12rem;
+        top: 19.12rem;
+        width: 173px;
+        height: 143px;
+    }
+
+    img.decor11 {
+        display: none;
+    }
+
+    img.decor5 {
+        top: 6.43rem;
+        right: 0;
+        width: 154px;
+        height: 132px;
+        transform: rotate(-45deg);
+    }
+
+    img.decor4 {
+        display: none;
+    }
+
+    img.decor6 {
+        top: 29rem;
+        right: 0;
+        transform: rotate(-23deg);
+        width: 178px;
+        height: 133px;
+    }
+
 
 
 }
