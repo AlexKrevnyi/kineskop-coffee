@@ -2,48 +2,12 @@
 @import './static/css/typography.css';
 
 /* Buttons */
-.button {
-    display: inline-block;
-    padding: 15px 48px;
-    border-radius: 3px;
-    font-size: 16px;
-    line-height: 1;
-    border: 1px solid transparent;
-    vertical-align: middle;
-    cursor: pointer;
-    color: var(--color-primary);
-    outline: none;
-}
-
-.button.button--primary  {
-    background-color: var(--color-primary);
-    color: white;
-}
-
-.button.button--primary:hover   {
-    background-color: var(--color-primary--dark);
-}
-
-.button.button--full-width {
-    width: 100%;
-}
-
-.button.button--small  {
-    padding: 8px 16px;
+button.open {
+    width: 310px;
+    height: 70px;
+    border-radius: 10px;
+    font-family: 'neue';
+    font-size: 21px;
+    line-height: 21px;
     text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 1px;
 }
-
-/* Sections */
-.section {
-    position: relative;
-    margin: 40px 0;
-}
-
-@media screen and (max-width: 768px) {
-    .section  {
-        margin: 25px 0;
-    }
-}
-
