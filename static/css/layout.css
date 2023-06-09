@@ -12,7 +12,7 @@
 
 body {
     display: block;
-    font-family: sans-serif;
+    font-family: 'sans-serif';
     font-size: 16px;
     overflow-x: hidden;
 }
@@ -64,7 +64,7 @@ li a {
     padding: 10px 12px;
     border-radius: 50px;
     transition: 250ms;
-    font-family: ;
+    font-family: sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -99,8 +99,9 @@ li.order a:where(:hover, :focus) {
 
 .pink-page {
     background-color: var(--pink);
-    height: 1072px;
+    height: 100%;
     margin-top: -1px;
+    padding-bottom: 84px;
 }
 
 .pink-page-width {
@@ -114,8 +115,10 @@ li.order a:where(:hover, :focus) {
 
 .pink-page-text {
    padding-top: 76px;
+
    position: relative;
    z-index: 100;
+
 }
 
 .pink-page-text p {
@@ -256,6 +259,9 @@ img.decor6 {
 
 /*Tablet Pink page*/
     
+    .pink-page {
+        padding-bottom: 70px;
+    }
 
     .pink-page-margin {
         margin: 0 40px;
@@ -275,19 +281,16 @@ img.decor6 {
         z-index: 100;
     }
 
-    p:nth-child(1) {
-        border: 1px solid yellow;
+    .pink-page-text p:nth-child(1) {
         width: 50%;
     }
 
-    p:nth-child(2) {
+    .pink-page-text p:nth-child(2) {
         width: 100%;
-        border: 1px solid green;
     }
 
-    p:nth-child(3) {
+    .pink-page-text p:nth-child(3) {
         width: 60%;
-        border: 1px solid red;
     }
 
 /*Tablet Decor*/    
@@ -406,6 +409,10 @@ img.decor6 {
     }
 /*Mobile Pink page*/
     
+    .pink-page {
+        padding-bottom: 40px;
+    }
+
     .pink-page-margin {
         margin: 0 20px;
     }
@@ -424,27 +431,18 @@ img.decor6 {
         z-index: 100;
     }
 
-    p:nth-child(1) {
-        border: 1px solid yellow;
+    .pink-page-text p:nth-child(1) {
         width: 70%;
     }
 
-    p:nth-child(2) {
+    .pink-page-text p:nth-child(2) {
         width: 100%;
-        border: 1px solid green;
     }
 
-    p:nth-child(3) {
+    .pink-page-text p:nth-child(3) {
         width: 80%;
-        border: 1px solid red;
     }
 
-    button.open {
-        width: 100%;
-        height: 70px;
-        border-radius: 10px;
-
-    }
 
 /*Mobile Decor*/    
 
