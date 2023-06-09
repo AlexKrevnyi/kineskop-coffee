@@ -12,7 +12,7 @@
 
 body {
     display: block;
-    font-family: 'sans-serif';
+    font-family: sans-serif;
     font-size: 16px;
     overflow-x: hidden;
 }
@@ -31,7 +31,7 @@ div.header-wrapper {
 
 div.header-container {
     background-color: var(--white);
-    max-width: 1320px;
+    max-width: 1440px;
     height: 93px;
     display: flex;
     align-items: center;
@@ -104,12 +104,12 @@ li.order a:where(:hover, :focus) {
     padding-bottom: 84px;
 }
 
-.pink-page-width {
+.page-width {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.pink-page-margin {
+.page-margin {
     margin: 0 60px;
 }
 
@@ -176,6 +176,65 @@ img.decor6 {
     top: 32rem;
     right: 3.3rem;
 }
+
+/*Primary black page*/
+
+.black-page {
+    background-color: var(--black);
+    height: 100%;
+    padding: 80px 0px;
+    color: var(--white);
+}
+
+.black-page-text {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 2fr 4fr 3fr;
+    grid-template-rows: ;
+    grid-template-areas: 
+    "about par1 par1 par1 par1"
+    "our shop par2 par2 par2"
+    
+    
+}
+
+.grid-1 {
+    grid-area: about;
+}
+
+.grid-2 {
+    grid-area: our;
+}
+
+.grid-3 {
+    grid-area: shop;
+}
+
+.grid-4 {
+    grid-area: par1;
+}
+
+.grid-5 {
+    grid-area: par2;
+}
+
+
+
+.black-page-text h1 {
+    font-family: 'damn';
+    font-size: 150px;
+    line-height: 157px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.black-page-text p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
 
 
 
@@ -263,7 +322,7 @@ img.decor6 {
         padding-bottom: 70px;
     }
 
-    .pink-page-margin {
+    .page-margin {
         margin: 0 40px;
     }
 
@@ -413,7 +472,7 @@ img.decor6 {
         padding-bottom: 40px;
     }
 
-    .pink-page-margin {
+    .page-margin {
         margin: 0 20px;
     }
 

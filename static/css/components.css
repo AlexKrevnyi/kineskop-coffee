@@ -25,6 +25,11 @@ button.open:hover {
     color: var(--white);
 }
 
+button.open:active {
+     transform: scale(1.1);
+     transition: transform 0.2s;
+}
+
 .open span {
     display: block;
     font-family: sans-serif;
@@ -34,7 +39,6 @@ button.open:hover {
     font-size: 21px;
     line-height: 21px;
     text-transform: uppercase;
-    white-space: nowrap;
     animation: animate 3s linear infinite;
 }    
 
