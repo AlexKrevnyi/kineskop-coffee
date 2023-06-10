@@ -196,13 +196,10 @@ img.decor6 {
 .grid-1 {
     grid-area: 1 / 1 / 2 / 2;
     align-self: end;
-    
-    
 }
 
 .grid-2 {
-    grid-area: 2 / 1 / 3 / 2;
-    
+    grid-area: 2 / 1 / 3 / 2;  
 }
 
 .grid-3 {
@@ -219,9 +216,6 @@ img.decor6 {
     padding-left: 5rem;
 }
 
-
-
-
 .black-page-text span {
     font-family: 'damn';
     font-size: 150px;
@@ -235,6 +229,23 @@ img.decor6 {
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
+}
+
+/*Primary Photo page*/
+
+.photo-page {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: nowrap;
+}
+
+.caffe-photo {
+    object-fit: cover;
+    min-width: 0;
+}
+
+.photo-container {
+    padding: 0 0 80px 0; 
 }
 
 
@@ -440,6 +451,24 @@ img.decor6 {
         padding-left: 10px;
     }
 
+/*Tablet Photo Page*/ 
+
+    .photo-page {
+        flex-direction: column;
+    }
+
+    .photo-container {
+        padding: 0 0 70px 0; 
+    }
+
+    .photo-margin-mobile {
+        margin: 0;
+    }
+
+    .caffe-photo {
+    width: 100%;
+    max-height: 640px;
+}
 
 
 
@@ -596,6 +625,69 @@ img.decor6 {
         width: 178px;
         height: 133px;
     }
+
+/*Mobile Black Page*/
+
+.black-page {
+        padding: 40px 0;
+    }
+
+    .black-page-text span {
+        font-family: 'damn';
+        font-size: 90px;
+        line-height: 94px;
+    }
+
+    .black-page-text p {
+        font-size: 16px;
+        line-height: 24px;
+    }  
+
+    .black-page-text {
+        display: grid;
+        gap: 1rem;
+        grid-template-rows: 0.5fr 0.5fr 2fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .grid-2 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .grid-3 {
+        grid-area: 2 / 2 / 3 / 5;
+    }
+
+    .grid-4 {
+        grid-area: 3 / 1 / 5 / 5;
+        padding-left: 0;
+    }
+
+    .grid-5 {
+        grid-area: 4 / 1 / 5 / 5;
+        padding-left: 0;  
+    }
+
+/*Mobile Photo page*/
+
+    
+    .photo-page {
+        flex-direction: column;
+    }
+
+    .photo-container {
+        padding: 0 0 40px 0; 
+    }
+
+    .photo-margin-mobile {
+        margin: 0;
+    }
+
+
 
 
 
