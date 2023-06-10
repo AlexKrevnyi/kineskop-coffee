@@ -189,41 +189,43 @@ img.decor6 {
 .black-page-text {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr 1fr 2fr 4fr 3fr;
-    grid-template-rows: ;
-    grid-template-areas: 
-    "about par1 par1 par1 par1"
-    "our shop par2 par2 par2"
-    
-    
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 2fr 3fr 3fr;
 }
 
 .grid-1 {
-    grid-area: about;
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: end;
+    
+    
 }
 
 .grid-2 {
-    grid-area: our;
+    grid-area: 2 / 1 / 3 / 2;
+    
 }
 
 .grid-3 {
-    grid-area: shop;
+    grid-area: 2 / 2 / 3 / 3;
 }
 
 .grid-4 {
-    grid-area: par1;
+    grid-area: 1 / 2 / 2 / 5;
+    padding-left: 5rem;
 }
 
 .grid-5 {
-    grid-area: par2;
+    grid-area: 2 / 3 / 3 / 5;
+    padding-left: 5rem;
 }
 
 
 
-.black-page-text h1 {
+
+.black-page-text span {
     font-family: 'damn';
     font-size: 150px;
-    line-height: 157px;
+    line-height: 1;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -387,6 +389,58 @@ img.decor6 {
         right: 0;
         transform: rotate(-30deg);
     }
+
+/*Tablet black page*/
+
+    .black-page {
+        padding: 70px 0;
+    }
+
+    .black-page-text span {
+        font-family: 'damn';
+        font-size: 140px;
+        line-height: 147px;
+    }
+
+    .black-page-text p {
+        font-size: 16px;
+        line-height: 24px;
+    }  
+
+    .black-page-text {
+        display: grid;
+        gap: 1rem;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 3fr 3fr;
+    }
+
+    .grid-1 {
+        grid-area: 1 / 1 / 2 / 2;
+        align-self: end;
+    }
+
+    .grid-2 {
+        grid-area: 2 / 1 / 3 / 2;
+    
+    }
+
+    .grid-3 {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+
+    .grid-4 {
+        grid-area: 1 / 2 / 3 / 5;
+        padding-left: 3rem;
+        padding-right:;
+        align-self: center;
+    }
+
+    .grid-5 {
+        grid-area: 3 / 3 / 4 / 5;
+        padding-left: 10px;
+    }
+
+
 
 
 }
