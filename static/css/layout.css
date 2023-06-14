@@ -293,7 +293,6 @@ img.decor6 {
     font-family: 'damn';
     font-size: 150px;
     color: var(--white);
-    
     background-color: var(--black);
     border-radius: 100px;
     text-align: center;
@@ -309,7 +308,6 @@ img.decor6 {
     margin-top: 40px;
     padding: 50px;
 }
-
 
 .main-menu-heading {
     font-family: 'damn';
@@ -345,17 +343,6 @@ img.decor6 {
     font-size: 128px;
 }
 
-ul.ml-uah {
-    font-family: sans-serif;
-    font-size: 20px;  
-    display: flex;
-    gap: 100px;
-    justify-content: flex-end;
-    padding-right: 30px;
-    width: 510px;
-}
-
-
 .price-items li {
     padding-top: 18px;
     padding-bottom: 28px;
@@ -380,8 +367,16 @@ ul.ml-uah {
     text-align: right;
 }
 
-
+span:empty {
+    width: 250px;
 }
+
+.ml-uah {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+
 
 /*TABLET VERSION*/
 
