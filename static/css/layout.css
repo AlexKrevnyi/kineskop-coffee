@@ -300,9 +300,8 @@ img.decor6 {
 }
 
 .main-menu {
-    display: ;
     width: 100%;
-    height: 1320px;
+    height: 100%;
     background-color: var(--white);
     border-radius: 80px;
     margin-top: 40px;
@@ -325,8 +324,15 @@ img.decor6 {
 
 /*Main menu*/
 
+.sides {
+    display: flex;
+    gap: 4rem;
+}
+
 .left-side-menu {
     width: 50%;
+    min-height: 100%;
+    min-width: 0;
 }
 
 .black-coffee {
@@ -334,17 +340,18 @@ img.decor6 {
     flex-direction: column;
     flex-wrap: nowrap;
     font-family: 'damn';
-    margin-top: 90px;
+    margin-top: 62px;
     font-size: 50px;
     text-transform: uppercase;
 }
 
 .black-coffee p {
     font-size: 128px;
+    max-height: 128px;
+    white-space: nowrap;
 }
 
 .price-items li {
-    padding-top: 18px;
     padding-bottom: 28px;
     display: flex;
     justify-content: flex-start;
@@ -371,9 +378,41 @@ span:empty {
     width: 250px;
 }
 
+span.toppings:empty {
+    width: 120px;
+}
+
 .ml-uah {
     font-family: sans-serif;
     font-size: 20px;
+}
+
+.right-side-menu {
+    width: 50%;
+    min-height: 100%;
+    min-width: 0;
+}
+
+.fix-letter {
+    font-family: arial;
+    font-size: 120px;
+}
+
+.toppings-par {
+    margin-bottom: 40px;
+}
+
+p.tea-descr {
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 250px;
+    white-space: normal;
+    line-height: 150%;
+    padding-bottom: 28px;
+}
+
+li.tea-pad {
+    padding-bottom: 10px;
 }
 
 
