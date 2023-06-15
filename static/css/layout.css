@@ -638,30 +638,92 @@ li.tea-pad {
 
 /*Tablet why to visit us*/
 
-.why-visit {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+    .why-visit {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 
-.why-heading {
-    width: 100%;
-}
+    .why-heading {
+        width: 100%;
+    }
 
-.why-heading p {
-    font-size: 140px;
-    line-height: 147px;
-    text-align: left;
-}
+    .why-heading p {
+        font-size: 140px;
+        line-height: 147px;
+        text-align: left;
+    }
 
-.why-text {
-    width: 100%;
-}
+    .why-text {
+        width: 100%;
+    }
 
-.why-text li {
-    font-size: 16px;
-    line-height: 24px;
-}
+    .why-text li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+/*Tablet main menu page*/
+
+    .menu {
+        max-width: 430px;
+    }
+
+    .menu p {
+        font-size: 128px;
+    }
+
+    .main-menu {
+        padding: 36px;
+    }
+
+    .main-menu-heading {
+        font-size: 140px;
+    }
+
+    .sides {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .left-side-menu {
+        width: 100%;
+    }
+
+    .black-coffee {
+        margin-top: 42px;
+        font-size: 36px;
+    }
+
+    .black-coffee p {
+        font-size: 90px;
+    }
+
+    .price-items li {
+        padding-bottom: 28px;
+        justify-content: space-between;
+    }
+
+    .right-side-menu {
+        width: 100%;
+    }
+
+    .fix-letter {
+        font-size: 80px;
+    }
+
+    .toppings-par {
+        margin-bottom: 40px;
+    }
+
+    p.tea-descr {
+        font-size: 14px;
+    }
+
+    li.tea-pad {
+        padding-bottom: 10px;
+    }
+
 
 
 }
@@ -909,6 +971,79 @@ li.tea-pad {
         font-size: 16px;
         line-height: 24px;
     }
+
+
+/*Mobile main menu page*/
+
+   .menu {
+        padding-top: 40px;
+        max-width: 100%;
+}
+
+    .menu p {
+        font-size: 90px;
+        text-align: center;
+        padding: 16px 85px 0px 85px;
+    }
+
+    .main-menu {
+        border-radius: 60px;
+        margin-top: 20px;
+        padding: 30px 20px 20px 20px;
+    }
+
+    .main-menu-heading {
+        font-size: 90px;
+    }
+
+    .sides {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .left-side-menu {
+        width: 100%;
+    }
+
+    .black-coffee {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+
+    .black-coffee p {
+        font-size: 64px;
+    }
+
+    .ml-uah {
+        font-size: 14px;
+    }   
+
+    .price-items li {
+        padding-bottom: 20px;
+        justify-content: space-between;
+    }
+
+    .right-side-menu {
+        width: 100%;
+    }
+
+    .fix-letter {
+        font-size: 60px;
+    }
+
+    .toppings-par {
+        margin-bottom: 40px;
+    }
+
+    p.tea-descr {
+        font-size: 14px;
+        line-height: 105%;
+    }
+
+    li.tea-pad {
+        padding-bottom: 10px;
+    }
+
 
 
 
