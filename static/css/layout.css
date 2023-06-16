@@ -415,6 +415,32 @@ li.tea-pad {
     padding-bottom: 10px;
 }
 
+/*Seasonal Menu*/
+
+.seas-menu {
+    width: 100%;
+    height: 100%;
+    background-color: var(--green);
+    border-radius: 80px;
+    margin-top: 40px;
+    padding: 50px;
+}
+
+.seas-coffee {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: 'damn';
+    margin-top: 62px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.seas-coffee p {
+    font-size: 128px;
+}
+
+
 
 
 /*TABLET VERSION*/
@@ -723,6 +749,22 @@ li.tea-pad {
     li.tea-pad {
         padding-bottom: 10px;
     }
+
+/*Tablet Seasonal Menu*/ 
+
+    .seas-menu {
+        padding: 36px;
+    }
+
+
+   .seas-coffee {
+        margin-top: 42px;
+        font-size: 36px;
+    }
+
+    .seas-coffee p {
+        font-size: 90px;
+    }   
 
 
 
@@ -1044,7 +1086,22 @@ li.tea-pad {
         padding-bottom: 10px;
     }
 
+/*Mobile Seasonal*/
 
+    .seas-menu {
+        border-radius: 60px;
+        margin-top: 20px;
+        padding: 30px 20px 20px 20px;
+    }
+
+    .seas-coffee {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+
+    .seas-coffee p {
+        font-size: 64px;
+    }
 
 
 
