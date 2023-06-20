@@ -634,6 +634,58 @@ img.bean4 {
 }
 
 
+/*FOOTER*/
+
+.final-container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contacts, .address, .social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts p, .address p, .social-media p {
+    font-family: 'damn';
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 107%;
+    margin-bottom: 16px;
+}
+
+.contacts a, .address a, .social-media a {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contacts a, .address a, .social-media a:where(:hover, :focus) {
+    cursor: pointer;
+    background-color: var(--black);
+}
+
+.copyright p {
+    text-align: center;
+    padding: 65px 0px 24px 0px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.black-page.last-page {
+    padding-bottom: 0;
+}
+
+
+
+
 /*TABLET VERSION*/
 
 /* Max Width 
