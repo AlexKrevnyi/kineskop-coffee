@@ -14,11 +14,6 @@ button.open {
     border:1px solid black;
 }
 
-.open-overflow {
-    display: flex;
-    font-size: 0px;
-}
-
 button.open:hover {
     cursor: pointer;
     background-color: var(--black);

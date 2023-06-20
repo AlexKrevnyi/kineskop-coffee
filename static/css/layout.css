@@ -248,6 +248,10 @@ img.decor6 {
     padding: 0; 
 }
 
+ .photo-margin-mobile {
+    margin: 0;
+}
+
 /*Primary Why to visit us page*/
 
 .why-visit {
@@ -525,7 +529,109 @@ img.bean4 {
     left: 146px;
 }
 
+/*Primary Video Page*/
 
+.video-page {
+    width: 100%;
+    max-height: 740px;
+    display: flex;
+}
+
+.back-vid {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.black-page.vidpage {
+    padding: 0;
+}
+
+.page-margin.vidpage {
+    margin: 0;
+}
+
+/*Pink Page Running Line*/
+
+.pink-page.run-line {
+    padding: 80px 0;
+}
+
+
+/*Pink Running Page Running Line*/
+
+.running-line {
+    overflow: hidden;
+    position: relative;
+    max-height: 123px;
+    white-space: nowrap;
+    margin-bottom: 36px;
+}
+
+.running-line span {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'damn';
+    font-size: 150px;
+    color: var(--white);
+    padding: 0 60px;
+    animation: move 7s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/*Pink Running Page Text*/
+.running-text {
+    padding: 104px 0px 0px 50px;
+    position: relative;
+}
+
+.running-text p {
+    text-transform: uppercase;
+    font-family: 'damn';
+    font-size: 150px;
+    line-height: 105%;
+    z-index: 100;
+    position: relative;
+}
+
+.run-decor1 {
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 10;
+}
+
+.run-decor2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/*Primary Last Photo Page*/
+
+.last-photo-page {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: nowrap;
+}
+
+.last-photo {
+    object-fit: cover;
+    min-width: 0;
+}
+
+.photo-container {
+    padding: 0; 
+}
 
 
 /*TABLET VERSION*/
@@ -908,6 +1014,45 @@ img.bean4 {
         left: 0px;
         z-index: 1;
     }
+
+/*Tablet Pink Page Running Line*/
+
+    .pink-page.run-line {
+        padding: 70px 0;
+    }
+
+    .running-line span {
+        font-size: 140px;
+    }
+
+/*Pink Running Page Text*/
+
+    .running-text {
+        padding: 104px 110px 110px 50px;
+        position: relative;
+    }
+
+    .running-text p {
+        font-size: 140px;
+    }
+
+
+/*Tablet Last Photos Page*/
+
+     .last-photo-page {
+        flex-direction: column;
+    }
+
+    .last-photo {
+        width: 100%;
+        max-height: 640px;
+    }
+
+
+
+
+
+
 
 
 
@@ -1310,6 +1455,53 @@ img.bean4 {
         right: 15px;
         z-index: 1;
     }
+
+/*Mobile Pink Page Running Line*/
+
+    .pink-page.run-line {
+        padding: 40px 0;
+    }
+
+    .running-line span {
+        font-size: 90px;
+    }
+
+/*Pink Runnink Page Text*/
+
+    .running-text {
+        padding: 35px 22px 50px 22px;
+        position: relative;
+    }
+
+    .running-text p {
+        font-size: 90px;
+    }
+
+    img.run-decor1 {
+        width: 120px;
+        aspect-ratio: 1 / 1;
+    }
+
+    img.run-decor2 {
+        width: 130px;
+        aspect-ratio: 1 / 1;
+    }
+
+/*Mobile Last Photo Page*/
+    
+     .last-photo-page {
+        flex-direction: column;
+    }
+
+    .last-photo {
+        width: 100%;
+        max-height: 350px;
+    }
+
+
+
+    
+
 
 
 
