@@ -12,3 +12,10 @@ navToggle.addEventListener('click', () => {
 		navToggle.setAttribute('aria-expanded', false);
 	}
 });
+
+//Links
+	document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+		primaryNav.setAttribute('data-visible', false);
+		navToggle.setAttribute('aria-expanded', false);
+	}))
+

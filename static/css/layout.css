@@ -731,6 +731,7 @@ img.bean4 {
         background: url("../images/hamburger-menu-close.svg");
         width: 3rem;
         background-size: cover;
+        position: fixed;
     }
 
     .primary-navigation {
@@ -748,7 +749,6 @@ img.bean4 {
         z-index: 1000;
         transform: translateX(100%);
         transition: transform 350ms ease-out;
-      
     }
 
     .primary-navigation[data-visible="true"] {
@@ -1154,6 +1154,7 @@ img.bean4 {
         background: url("../images/hamburger-menu-close.svg");
         width: 2rem;
         background-size: cover;
+        position: fixed;
     }
 
     .primary-navigation {
