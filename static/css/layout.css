@@ -1257,8 +1257,8 @@ img.bean4 {
     img.decor3 {
         right: 0.12rem;
         top: 19.12rem;
-        width: 173px;
-        height: 143px;
+        width: 156px;
+        height: 130px;
     }
 
     img.decor11 {
@@ -1268,8 +1268,8 @@ img.bean4 {
     img.decor5 {
         top: 6.43rem;
         right: 0;
-        width: 154px;
-        height: 132px;
+        width: 148px;
+        height: 90px;
         transform: rotate(-45deg);
     }
 
@@ -1278,11 +1278,12 @@ img.bean4 {
     }
 
     img.decor6 {
-        top: 29rem;
+        top: auto;
+        bottom: 6rem;
         right: 0;
         transform: rotate(-23deg);
-        width: 178px;
-        height: 133px;
+        width: 160px;
+        height: 76px;
     }
 
 /*Mobile Black Page*/
