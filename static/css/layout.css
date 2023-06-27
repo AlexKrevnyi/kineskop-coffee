@@ -293,6 +293,10 @@ img.decor6 {
     max-width: 510px;
 }
 
+.menu-page {
+    position: relative;
+}
+
 .menu p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 130px;
@@ -427,6 +431,7 @@ li.tea-pad {
     border-radius: 80px;
     margin-top: 40px;
     padding: 50px;
+    overflow: hidden;
 }
 
 .seas-coffee {
