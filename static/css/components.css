@@ -17,19 +17,6 @@ button.open {
     color: var(--black);
 }
 
-button.open:hover {
-    cursor: pointer;
-    background-color: var(--black); 
-    color: var(--white);
-}
-
-button.open:active {
-    transform: scale(1.1);
-    transition: transform 0.2s;
-    color: var(--white);
-    background-color: var(--black);
-}
-
 .open span {
     display: block;
     font-family: 'Open Sans', sans-serif;
