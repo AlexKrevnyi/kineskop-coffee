@@ -57,7 +57,7 @@ div.header-logo {
 
 nav li {
     list-style-type: none;
-    padding: 10px 10px;
+    padding: 10px 4px;
 }
 
 li a {
@@ -69,6 +69,7 @@ li a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-style: normal;
+
 }
 
 li.order a {
@@ -80,11 +81,23 @@ li.order a {
     transition: 250ms;
 }
 
-
-
 .mobile-nav-toggle {
     display: none;
 }
+
+/*Ukraine/English Version*/
+
+.lang {
+    display: block;
+    margin-left: 8px;
+    background: url("../images/usa-flag.svg");
+    border: 0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px  ;
+    background-size: cover;
+}
+    
 
 /*Primary Pink Page*/
 
@@ -175,36 +188,27 @@ img.decor6 {
 }
 
 .black-page-text {
-    display: grid;
-    gap: 1rem;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 2fr 3fr 3fr;
+   display: flex;
+}
+
+.about1 {
+    width: 50%;
+}
+
+.about2 {
+    width: 50%;
+    margin-left: 1rem;
 }
 
 .grid-1 {
-    grid-area: 1 / 1 / 2 / 2;
-    align-self: end;
-}
-
-.grid-2 {
-    grid-area: 2 / 1 / 3 / 2;  
-}
-
-.grid-3 {
-    grid-area: 2 / 2 / 3 / 3;
+    margin-bottom: 2rem;
 }
 
 .grid-4 {
-    grid-area: 1 / 2 / 2 / 5;
-    padding-left: 5rem;
+    margin-bottom: 2rem;
 }
 
-.grid-5 {
-    grid-area: 2 / 3 / 3 / 5;
-    padding-left: 5rem;
-}
-
-.black-page-text span {
+.about1 p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 130px;
     line-height: 1;
@@ -212,7 +216,7 @@ img.decor6 {
     text-transform: uppercase;
 }
 
-.black-page-text p {
+.about2 p {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
@@ -675,6 +679,7 @@ img.bean4 {
     color: var(--white);
     text-decoration: none;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .copyright p {
@@ -750,6 +755,14 @@ img.bean4 {
 
     li.order {
         padding-top: 30px;
+    }
+
+    .lang {
+        position: absolute;
+        top: 2.5rem;
+        left: 32px;
+        width: 48px;
+        height: 48px;
     }
 
 /*END of mobile toggler menu*/
@@ -848,49 +861,35 @@ img.bean4 {
         padding: 70px 0;
     }
 
-    .black-page-text span {
+    .black-page-text {
+        flex-direction: column;
+    }
+
+    .about1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .grid-1 {
+        margin-bottom: 0;
+    }
+
+    .about1 p {
         font-family: 'Yanone Kaffeesatz', sans-serif;
         font-size: 120px;
         line-height: 105%;
     }
 
-    .black-page-text p {
+    .about2 p {
         font-size: 16px;
         line-height: 24px;
     }  
 
-    .black-page-text {
-        display: grid;
-        gap: 1rem;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 2fr 3fr 3fr;
-    }
-
-    .grid-1 {
-        grid-area: 1 / 1 / 2 / 2;
-        align-self: end;
-    }
-
-    .grid-2 {
-        grid-area: 2 / 1 / 3 / 2;
-    
-    }
-
-    .grid-3 {
-        grid-area: 3 / 1 / 4 / 4;
-    }
-
-    .grid-4 {
-        grid-area: 1 / 2 / 3 / 5;
-        padding-left: 3rem;
-        padding-right:;
-        align-self: center;
-    }
-
-    .grid-5 {
-        grid-area: 3 / 3 / 4 / 5;
-        padding-left: 10px;
-    }
 
 /*Tablet Photo Page*/ 
 
@@ -1177,6 +1176,14 @@ img.bean4 {
         padding-top: 30px;
     }
 
+     .lang {
+        position: absolute;
+        top: 2.5rem;
+        left: 32px;
+        width: 32px;
+        height: 32px;
+    }
+
 /*Mobile header*/
 
     div.header-container {
@@ -1282,45 +1289,35 @@ img.bean4 {
         padding: 40px 0;
     }
 
-    .black-page-text span {
+    .black-page-text {
+        flex-direction: column;
+    }
+
+    .about1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about2 {
+         width: 100%;
+         margin-left: 0;
+    }
+
+    .about1 p {
         font-family: 'Yanone Kaffeesatz', sans-serif;
         font-size: 80px;
         line-height: 105%;
     }
 
-    .black-page-text p {
+    .about2 p {
         font-size: 16px;
         line-height: 24px;
     }  
 
-    .black-page-text {
-        display: grid;
-        gap: 1rem;
-        grid-template-rows: 0.5fr 0.5fr 2fr 1fr;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
     .grid-1 {
-        grid-area: 1 / 1 / 2 / 2;
+        margin-bottom: 0;
     }
-
-    .grid-2 {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .grid-3 {
-        grid-area: 2 / 2 / 3 / 5;
-    }
-
-    .grid-4 {
-        grid-area: 3 / 1 / 5 / 5;
-        padding-left: 0;
-    }
-
-    .grid-5 {
-        grid-area: 4 / 1 / 5 / 5;
-        padding-left: 0;  
-    }
+    
 
 /*Mobile Photo page*/
 
@@ -1612,6 +1609,11 @@ img.bean4 {
         transition: transform 0.2s;
         color: var(--white);
         background-color: var(--black);
+    }
+
+    button.lang:hover {
+        cursor: pointer;
+        opacity: 0.5;
     }
 
 }
