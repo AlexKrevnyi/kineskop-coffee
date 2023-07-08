@@ -5,7 +5,6 @@
 
 
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -88,6 +87,17 @@ li.order a {
 /*Ukraine/English Version*/
 
 .lang {
+    display: block;
+    margin-left: 8px;
+    background: url("../images/ua-flag.svg");
+    border: 0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px  ;
+    background-size: cover;
+}
+
+.lang.ukr {
     display: block;
     margin-left: 8px;
     background: url("../images/usa-flag.svg");
@@ -765,6 +775,14 @@ img.bean4 {
         height: 48px;
     }
 
+    .lang.ukr {
+        position: absolute;
+        top: 2.5rem;
+        left: 32px;
+        width: 48px;
+        height: 48px;
+    }
+
 /*END of mobile toggler menu*/
 
 /*Tablet header*/
@@ -1177,6 +1195,14 @@ img.bean4 {
     }
 
      .lang {
+        position: absolute;
+        top: 2.5rem;
+        left: 32px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .lang.ukr {
         position: absolute;
         top: 2.5rem;
         left: 32px;
