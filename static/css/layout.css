@@ -795,6 +795,10 @@ img.bean4 {
         margin: 0 40px;
     }
 
+    div.header-logo {
+        padding: 10px 0px 10px 24px;
+    }
+
     img.header-logo {
         width: 228px;
         height: 60px;
@@ -1196,7 +1200,7 @@ img.bean4 {
 
      .lang {
         position: absolute;
-        top: 2.5rem;
+        top: 2.75rem;
         left: 32px;
         width: 32px;
         height: 32px;
@@ -1204,7 +1208,7 @@ img.bean4 {
 
     .lang.ukr {
         position: absolute;
-        top: 2.5rem;
+        top: 2.75rem;
         left: 32px;
         width: 32px;
         height: 32px;
@@ -1220,6 +1224,10 @@ img.bean4 {
         flex-wrap: nowrap;
         border-radius: 50px;
         margin: 0 20px;
+    }
+
+    div.header-logo {
+        padding: 10px 0px 10px 20px;
     }
 
      img.header-logo {
@@ -1611,6 +1619,16 @@ img.bean4 {
     a:where(:hover, :focus,) {
         background-color:  var(--pink);
         transition: 250ms;
+    }
+
+    .header-logo a:where(:hover, :focus) {
+        cursor: pointer;
+        background-color: var(--white);
+    }
+
+    .final-logo a:where(:hover, :focus) {
+        cursor: pointer;
+        background-color: var(--black);
     }
 
     li.order a:where(:hover, :focus) {
